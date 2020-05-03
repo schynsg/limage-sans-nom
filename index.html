@@ -4,7 +4,7 @@
     <title>L'image sans nom - Accueil></title>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, shrink-to-fit=no">
+          content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <![endif]-->
@@ -19,16 +19,16 @@
     <![endif]-->  <!-- Insérer le chemin vers l'icon .ico -->
     <link rel="stylesheet" href=""> <!-- Insérer le chemin vers le css -->
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Organization">
 <header>
-    <h1 class="invisible">L'Image Sans Nom</h1>
+    <h1 class="invisible" itemprop="name">L'Image Sans Nom</h1>
     <div class="skip-links">
         <a href="#nav">Aller au menu</a>
         <a href="#main">Aller au contenu</a>
     </div>
     <div class="menu-link">
-        <a href="">
-            <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 20" width="85"
+        <a href="#">
+            <svg data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 20" width="85"
                  height="20">
                 <defs>
                     <style>.cls-1 {
@@ -37,14 +37,14 @@
                         stroke-width: 2px;
                     }</style>
                 </defs>
-                <line id="Ligne_12" data-name="Ligne 12" class="cls-1" y1="1" x2="84" y2="1"/>
-                <line id="Ligne_13" data-name="Ligne 13" class="cls-1" x1="26" y1="19" x2="84" y2="19"/>
+                <line data-name="Ligne 12" class="cls-1" y1="1" x2="84" y2="1"/>
+                <line data-name="Ligne 13" class="cls-1" x1="26" y1="19" x2="84" y2="19"/>
             </svg>
             <p class="menu-link__text">Menu</p>
         </a>
     </div>
     <div class="hidden-side hidden">
-        <svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.65 54.37" width="65"
+        <svg data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.65 54.37" width="65"
              height="65">
             <defs>
                 <style>.cls-2 {
@@ -53,24 +53,24 @@
                     stroke-width: 2px;
                 }</style>
             </defs>
-            <line id="Ligne_15" data-name="Ligne 15" class="cls-2" x1="0.62" y1="53.59" x2="68.03" y2="0.79"/>
-            <line id="Ligne_16" data-name="Ligne 16" class="cls-2" x1="0.62" y1="0.79" x2="68.03" y2="53.59"/>
+            <line data-name="Ligne 15" class="cls-2" x1="0.62" y1="53.59" x2="68.03" y2="0.79"/>
+            <line data-name="Ligne 16" class="cls-2" x1="0.62" y1="0.79" x2="68.03" y2="53.59"/>
         </svg>
         <div class="menu" id="nav">
             <nav class="main-nav">
                 <h2 class="invisible">Navigation principale</h2>
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
-                        <a href="" class="main-nav__link active " title="Accueil">Accueil</a>
+                        <a href="#" class="main-nav__link active " title="Accueil">Accueil</a>
                     </li>
                     <li>
-                        <a href="" class="main-nav__link" title="À propos">À Propos</a>
+                        <a href="#" class="main-nav__link" title="À propos">À Propos</a>
                     </li>
                     <li>
-                        <a href="" class="main-nav__link" title="Expos et livres">Expos et livres</a>
+                        <a href="#" class="main-nav__link" title="Expos et livres">Expos et livres</a>
                     </li>
                     <li>
-                        <a href="" class="main-nav__link" title="Contact">Contact</a>
+                        <a href="#" class="main-nav__link" title="Contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -79,7 +79,8 @@
             <ul class="social-networks__list">
                 <li class="social-networks__item">
                     <a href="tel:+320485847977" class="social-networks__link" title="Téléphone">
-                        <svg id="Calque_3" data-name="Calque 3" xmlns="http://www.w3.org/2000/svg"
+                        <p class="invisible" itemprop="phone">+320485847977</p>
+                        <svg data-name="Calque 3" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 37.3 37.3" width="40" height="40">
                             <defs>
                                 <style>.cls-3 {
@@ -94,7 +95,7 @@
                 </li>
                 <li class="social-networks__item">
                     <a href="mailto:limagesansnom@gmail.com" class="social-networks__link" title="E-mail">
-                        <svg id="Calque_4" data-name="Calque 4" xmlns="http://www.w3.org/2000/svg"
+                        <svg data-name="Calque 4" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 37.55 37.89" width="40" height="40">
                             <defs>
                                 <style>.cls-4 {
@@ -105,11 +106,12 @@
                                   d="M33.26,6.2A18.32,18.32,0,0,0,20.38,1.43,19.29,19.29,0,0,0,6.6,6.86,18.05,18.05,0,0,0,.9,20.38,18.56,18.56,0,0,0,6.32,33.72c3.6,3.71,8.52,5.59,14.62,5.59A27.65,27.65,0,0,0,31.81,37a2.33,2.33,0,0,0,1.25-3,2.28,2.28,0,0,0-2.14-1.44,2.23,2.23,0,0,0-.92.19,23.06,23.06,0,0,1-9.07,2,17.06,17.06,0,0,1-6.25-1.07A12.24,12.24,0,0,1,10,30.48,14.61,14.61,0,0,1,6.15,20.41a15.79,15.79,0,0,1,1-5.77,14.31,14.31,0,0,1,3.11-4.72A13.79,13.79,0,0,1,20.45,5.71a13.56,13.56,0,0,1,9.38,3.46,11.52,11.52,0,0,1,2.87,3.9,11.92,11.92,0,0,1,1,4.79,9.85,9.85,0,0,1-1.76,6c-1.16,1.58-2.38,2.38-3.64,2.38-.68,0-1-.37-1-1.1A20.75,20.75,0,0,1,27.37,23l1.44-11.76H23.87l-.32,1.15a6.43,6.43,0,0,0-4.14-1.54,8,8,0,0,0-6.12,2.84A10.57,10.57,0,0,0,10.75,21a10.58,10.58,0,0,0,2.26,7,6.87,6.87,0,0,0,5.43,2.69,6.22,6.22,0,0,0,4.85-2.38,5,5,0,0,0,4.47,2.28,9.56,9.56,0,0,0,7.52-3.79,13.79,13.79,0,0,0,3.16-9.13A15.17,15.17,0,0,0,33.26,6.2ZM21.87,24a3.82,3.82,0,0,1-3.13,1.76,2.25,2.25,0,0,1-2-1.3A6.34,6.34,0,0,1,16,21.23a6.46,6.46,0,0,1,1.07-3.85,3.17,3.17,0,0,1,2.65-1.47A3.29,3.29,0,0,1,22.13,17a4,4,0,0,1,1.06,2.93A6.72,6.72,0,0,1,21.87,24Z"
                                   transform="translate(-0.9 -1.42)"/>
                         </svg>
+                        <p class="invisible" itemprop="mail">limagesansnom@gmail.com</p>
                     </a>
                 </li>
                 <li class="social-networks__item">
                     <a href="https://www.facebook.com/limagesansnom/" class="social-networks__link" title="Facebook">
-                        <svg id="Calque_5" data-name="Calque 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"
+                        <svg data-name="Calque 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"
                              width="40" height="40">
                             <defs>
                                 <style>.cls-5 {
@@ -131,10 +133,10 @@
         <div class="lang">
             <ul class="lang__list">
                 <li class="lang__item">
-                    <a href="" class="lang__link" title="Français">Fr</a>
+                    <a href="#" class="lang__link" title="Français">Fr</a>
                 </li>
                 <li class="lang__item">
-                    <span lang="en"><a href="" class="lang__link" title="English">En</a></span>
+                    <span lang="en"><a href="#" class="lang__link" title="English">En</a></span>
                 </li>
             </ul>
         </div>
@@ -148,13 +150,13 @@
             <div class="intro-images__nav">
                 <ul class="intro-images__list">
                     <li class="intro-images__item">
-                        <a href="" title="Image numéro 1" class="active intro-images__link"></a>
+                        <a href="#" title="Image numéro 1" class="active intro-images__link"></a>
                     </li>
                     <li class="intro-images__item">
-                        <a href="" title="Image numéro 2" class="intro-images__link"></a>
+                        <a href="#" title="Image numéro 2" class="intro-images__link"></a>
                     </li>
                     <li class="intro-images__item">
-                        <a href="" title="Image numéro 3" class="intro-images__link"></a>
+                        <a href="#" title="Image numéro 3" class="intro-images__link"></a>
                     </li>
                 </ul>
             </div>
@@ -162,8 +164,8 @@
                 <img src="./src/img/intro-img1.jpg" alt="Les locaux de L'Image Sans Nom" height="854" width="854">
             </div>
         </div>
-        <div class="intro-logo">
-            <svg id="Calque_6" data-name="Calque 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 279" width="250"
+        <div class="intro-logo" itemprop="logo">
+            <svg data-name="Calque 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 279" width="250"
                  height="250">
                 <defs>
                     <style>.cls-7, .cls-8, .cls-9 {
@@ -182,29 +184,29 @@
                         isolation: isolate;
                     }</style>
                 </defs>
-                <g id="Groupe_13" data-name="Groupe 13">
-                    <g id="Groupe_1" data-name="Groupe 1">
-                        <g id="Rectangle_30" data-name="Rectangle 30">
+                <g data-name="Groupe 13">
+                    <g data-name="Groupe 1">
+                        <g data-name="Rectangle 31">
                             <rect class="cls-7" x="20" y="17" width="234" height="240"/>
                             <rect class="cls-8" x="21" y="18" width="232" height="238"/>
                         </g>
-                        <g id="Rectangle_31" data-name="Rectangle 31">
+                        <g data-name="Rectangle 33">
                             <rect class="cls-7" width="110" height="124"/>
                             <rect class="cls-9" x="0.5" y="0.5" width="109" height="123"/>
                         </g>
-                        <g id="Rectangle_32" data-name="Rectangle 32">
+                        <g data-name="Rectangle 35">
                             <rect class="cls-7" x="161" y="192" width="117" height="87"/>
                             <rect class="cls-9" x="161.5" y="192.5" width="116" height="86"/>
                         </g>
                     </g>
-                    <g id="Groupe_2" data-name="Groupe 2">
-                        <g id="L_" data-name="L " class="cls-10">
+                    <g data-name="Groupe 2">
+                        <g data-name="L " class="cls-10">
                             <g class="cls-10">
                                 <path d="M40.42,36.33v3.92H28V22.75h4.2V36.33Z" transform="translate(-11 -10.25)"/>
                                 <path d="M39.87,22.75H43.8v5.43H39.87Z" transform="translate(-11 -10.25)"/>
                             </g>
                         </g>
-                        <g id="IMAGE" class="cls-10">
+                        <g class="cls-10">
                             <g class="cls-10">
                                 <path d="M199.72,38.25V22.85h3.69v15.4Z" transform="translate(-11 -10.25)"/>
                                 <path d="M221.78,22.85v15.4h-3.63V34.49c0-3.66.14-5.46.11-5.46h0s-1.25,2.11-1.38,2.33l-1.81,3.08h-1.91l-1.81-3.08C211.2,31.14,210,29,210,29h0s.12,1.8.12,5.46v3.76H206.4V22.85h3.48l2.88,4.66c1.13,1.83,1.3,2.22,1.32,2.22h0s.19-.39,1.32-2.22l2.88-4.66Z"
@@ -217,7 +219,7 @@
                                       transform="translate(-11 -10.25)"/>
                             </g>
                         </g>
-                        <g id="SANS" class="cls-10">
+                        <g class="cls-10">
                             <g class="cls-10">
                                 <path d="M35.68,259.26a2.81,2.81,0,0,0-2.78-2.09c-1.15,0-1.82.57-1.82,1.21,0,1.06,1.61,1.45,3.57,2.16,2.39.88,4.89,2.24,4.89,5,0,2.94-2.53,5-6.27,5a6.88,6.88,0,0,1-6.81-4.87l3.7-1a3.49,3.49,0,0,0,3.27,2.43c1.38,0,2-.64,2-1.42,0-1.29-1.88-1.61-4.18-2.48-1.94-.74-4.17-1.8-4.17-4.63,0-2.5,2.53-4.78,6-4.78a6.4,6.4,0,0,1,6.28,4.42Z"
                                       transform="translate(-11 -10.25)"/>
@@ -229,7 +231,7 @@
                                       transform="translate(-11 -10.25)"/>
                             </g>
                         </g>
-                        <g id="NOM" class="cls-10">
+                        <g class="cls-10">
                             <g class="cls-10">
                                 <path d="M232,253.45v16.8h-3.8l-3.43-4.68c-1.54-2.11-3.79-5.31-3.82-5.31h0s0,2.6,0,6.27v3.72h-4v-16.8h3.8l3.57,4.8c1.08,1.44,3.65,5.06,3.67,5.06h0s0-3,0-6v-3.84Z"
                                       transform="translate(-11 -10.25)"/>
@@ -249,7 +251,7 @@
                     photographie.</p>
             </div>
             <div class="intro-text__link">
-                <a href="" class="arrow-down">En savoir plus</a>
+                <a href="#" class="arrow-down">En savoir plus</a>
             </div>
         </div>
     </div>
@@ -258,7 +260,7 @@
         <div class="about__text">
             <div class="about__intro">
                 <h3 class="mid-underline bold">L'image sans nom</h3>
-                <p class="small italic">Par Olivier Cornil & Manu D'Autreppe</p>
+                <p class="small italic">Par <span itemprop="funder">Olivier Cornil & Manu D'Autreppe</span></p>
             </div>
             <div class="about__main">
                 <p>L’Image sans nom est lieu d’expositions liées
@@ -272,7 +274,7 @@
                     demande.</p>
             </div>
             <div class="about__link">
-                <a href="" class="arrow-right">
+                <a href="#" class="arrow-right">
                     À Propos
                 </a>
             </div>
@@ -296,7 +298,7 @@
     </div>
     <div class="footer__main">
         <div class="footer__logo">
-            <svg id="Calque_6" data-name="Calque 6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 279" width="200"
+            <svg data-name="Calque 7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 279" width="200"
                  height="200">
                 <defs>
                     <style>.cls-7, .cls-8, .cls-9 {
@@ -315,29 +317,29 @@
                         isolation: isolate;
                     }</style>
                 </defs>
-                <g id="Groupe_13" data-name="Groupe 13">
-                    <g id="Groupe_1" data-name="Groupe 1">
-                        <g id="Rectangle_30" data-name="Rectangle 30">
+                <g data-name="Groupe 13">
+                    <g data-name="Groupe 1">
+                        <g data-name="Rectangle 30">
                             <rect class="cls-7" x="20" y="17" width="234" height="240"/>
                             <rect class="cls-8" x="21" y="18" width="232" height="238"/>
                         </g>
-                        <g id="Rectangle_31" data-name="Rectangle 31">
+                        <g data-name="Rectangle 31">
                             <rect class="cls-7" width="110" height="124"/>
                             <rect class="cls-9" x="0.5" y="0.5" width="109" height="123"/>
                         </g>
-                        <g id="Rectangle_32" data-name="Rectangle 32">
+                        <g data-name="Rectangle 32">
                             <rect class="cls-7" x="161" y="192" width="117" height="87"/>
                             <rect class="cls-9" x="161.5" y="192.5" width="116" height="86"/>
                         </g>
                     </g>
-                    <g id="Groupe_2" data-name="Groupe 2">
-                        <g id="L_" data-name="L " class="cls-10">
+                    <g data-name="Groupe 2">
+                        <g data-name="L " class="cls-10">
                             <g class="cls-10">
                                 <path d="M40.42,36.33v3.92H28V22.75h4.2V36.33Z" transform="translate(-11 -10.25)"/>
                                 <path d="M39.87,22.75H43.8v5.43H39.87Z" transform="translate(-11 -10.25)"/>
                             </g>
                         </g>
-                        <g id="IMAGE" class="cls-10">
+                        <g class="cls-10">
                             <g class="cls-10">
                                 <path d="M199.72,38.25V22.85h3.69v15.4Z" transform="translate(-11 -10.25)"/>
                                 <path d="M221.78,22.85v15.4h-3.63V34.49c0-3.66.14-5.46.11-5.46h0s-1.25,2.11-1.38,2.33l-1.81,3.08h-1.91l-1.81-3.08C211.2,31.14,210,29,210,29h0s.12,1.8.12,5.46v3.76H206.4V22.85h3.48l2.88,4.66c1.13,1.83,1.3,2.22,1.32,2.22h0s.19-.39,1.32-2.22l2.88-4.66Z"
@@ -350,7 +352,7 @@
                                       transform="translate(-11 -10.25)"/>
                             </g>
                         </g>
-                        <g id="SANS" class="cls-10">
+                        <g class="cls-10">
                             <g class="cls-10">
                                 <path d="M35.68,259.26a2.81,2.81,0,0,0-2.78-2.09c-1.15,0-1.82.57-1.82,1.21,0,1.06,1.61,1.45,3.57,2.16,2.39.88,4.89,2.24,4.89,5,0,2.94-2.53,5-6.27,5a6.88,6.88,0,0,1-6.81-4.87l3.7-1a3.49,3.49,0,0,0,3.27,2.43c1.38,0,2-.64,2-1.42,0-1.29-1.88-1.61-4.18-2.48-1.94-.74-4.17-1.8-4.17-4.63,0-2.5,2.53-4.78,6-4.78a6.4,6.4,0,0,1,6.28,4.42Z"
                                       transform="translate(-11 -10.25)"/>
@@ -362,7 +364,7 @@
                                       transform="translate(-11 -10.25)"/>
                             </g>
                         </g>
-                        <g id="NOM" class="cls-10">
+                        <g class="cls-10">
                             <g class="cls-10">
                                 <path d="M232,253.45v16.8h-3.8l-3.43-4.68c-1.54-2.11-3.79-5.31-3.82-5.31h0s0,2.6,0,6.27v3.72h-4v-16.8h3.8l3.57,4.8c1.08,1.44,3.65,5.06,3.67,5.06h0s0-3,0-6v-3.84Z"
                                       transform="translate(-11 -10.25)"/>
@@ -382,7 +384,7 @@
                     <a href="#" class="links__link">L'image Sans Nom</a>
                 </li>
                 <li class="links__item">
-                    <p class="links__link">Place Vivegnis 6 à 4000 Liège</p>
+                    <p class="links__link" itemprop="address">Place Vivegnis 6 à 4000 Liège</p>
                 </li>
                 <li class="links__item">
                     <a href="mailto:limagesansnom@gmail.com" class="links__link">limagesansnom@gmail.com</a>
@@ -398,16 +400,16 @@
                 <h2 class="invisible">Navigation secondaire</h2>
                 <ul class="footer-nav__list">
                     <li class="footer-nav__item">
-                        <a href="" class="footer-nav__link" title="Accueil">Accueil</a>
+                        <a href="#" class="footer-nav__link" title="Accueil">Accueil</a>
                     </li>
                     <li>
-                        <a href="" class="footer-nav__link" title="À propos">À Propos</a>
+                        <a href="#" class="footer-nav__link" title="À propos">À Propos</a>
                     </li>
                     <li>
-                        <a href="" class="footer-nav__link" title="Expos et livres">Expos et livres</a>
+                        <a href="#" class="footer-nav__link" title="Expos et livres">Expos et livres</a>
                     </li>
                     <li>
-                        <a href="" class="footer-nav__link" title="Contact">Contact</a>
+                        <a href="#" class="footer-nav__link" title="Contact">Contact</a>
                     </li>
                 </ul>
             </nav>
