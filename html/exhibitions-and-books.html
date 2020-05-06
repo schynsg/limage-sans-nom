@@ -21,7 +21,7 @@
 </head>
 <body>
 <header>
-    <h1 class="main-title mid-underline">Photobooks & Glüwein, What Else ?</h1>
+    <h1 class="invisible">Nos expositions et nos livres</h1>
     <div class="skip-links">
         <a href="#nav">Aller au menu</a>
         <a href="#main">Aller au contenu</a>
@@ -67,7 +67,7 @@
                         <a href="./about.html" class="main-nav__link" title="À propos">À Propos</a>
                     </li>
                     <li>
-                        <a href="./exhibitions-and-books.html" class="main-nav__link" title="Expos et livres">Expos et livres</a>
+                        <a href="#" class="main-nav__link" title="Expos et livres">Expos et livres</a>
                     </li>
                     <li>
                         <a href="./contact.html" class="main-nav__link" title="Contact">Contact</a>
@@ -143,26 +143,69 @@
     </div>
 </header>
 <main id="main">
-    <div class="gray-background"></div>
-    <div class="single-item__intro">
-        <img src="../src/img/single-item1.jpg" alt="Affiche de l'exposition" height="711" width="711">
-        <img src="../src/img/single-item2.jpg" alt="Présentation de l'exposition" height="378" width="566">
-    </div>
-    <div class="single-item__about">
-        <div class="about__img">
-            <img src="../src/img/single-item-about.jpg" alt="Illustration de l'exposition" height="973" width="960">
+    <div class="exhibitions">
+        <div class="exhibitions__intro">
+            <h2 class="exhibitions__title">Nos expos</h2>
+            <a href="#exhibition__items" class="arrow__bottom">Découvrir</a>
         </div>
-        <div class="about__text">
-            <h2 class="mid-underline bold">À propos</h2>
-            <p class="about paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-             <div class="about__link">
-                 <a href="#" class="arrow-right">Événement Facebook</a>
-             </div>            
+        <div id="exhibitions__items">
+            <div class="exhibitions__item">
+                <div class="item__img">
+                    <img src="../src/img/exhibitions__item.jpg" alt="Affiche du vernissage du 24/01">
+                </div>
+                <div class="item__intro">
+                    <h3 class="item__title">Vernissage du 24/01 </h3>
+                    <p class="item-paragraph">UN TITRE AVEC LE MOT CORPS DEDANS
+                        Carte blanche à Jean Janssis.</p>
+                    <a href="./single-item.html" class="item__link">En savoir plus</a>
+                </div>
+            </div>
+            <div class="exhibitions__item">
+                <div class="item__img">
+                    <img src="../src/img/exhibitions__item.jpg" alt="Affiche du vernissage du 24/01">
+                </div>
+                <div class="item__intro">
+                    <h3 class="item__title">Vernissage du 24/01 </h3>
+                    <p class="item-paragraph">UN TITRE AVEC LE MOT CORPS DEDANS
+                        Carte blanche à Jean Janssis.</p>
+                    <a href="./single-item.html" class="item__link">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="books">
+        <div class="exhibitions__intro">
+            <h2 class="books__title">Nos livres</h2>
+            <a href="#books__items" class="arrow__bottom">Découvrir</a>
+        </div>
+        <div id="books__items">
+            <div class="books__item">
+                <div class="item__img">
+                    <img src="../src/img/books__item.jpg" alt="Johan Muyle – Sculpture Surfing">
+                </div>
+                <div class="item__intro">
+                    <h3 class="item__title">Johan Muyle – Sculpture Surfing</h3>
+                    <p class="item-paragraph">Texte d’Eric Fabre
+                        Photographies de Pascal Schyns</p>
+                    <a href="./single-item.html" class="item__link">En savoir plus</a>
+                </div>
+            </div>
+            <div class="books__item">
+                <div class="item__img">
+                    <img src="../src/img/books__item.jpg" alt="Johan Muyle – Sculpture Surfing">
+                </div>
+                <div class="item__intro">
+                    <h3 class="item__title">Johan Muyle – Sculpture Surfing</h3>
+                    <p class="item-paragraph">Texte d’Eric Fabre
+                        Photographies de Pascal Schyns</p>
+                    <a href="./single-item.html" class="item__link">En savoir plus</a>
+                </div>
+            </div>
         </div>
     </div>
 </main>
 <footer>
-    
+
     <div class="subsription">
         <h2 class="subscription__title">Inscrivez-vous à notre newsletter</h2>
         <p class="subscription__intro italic">Ceci nous permettra de vous tenir informé de notre actualité</p>
@@ -284,7 +327,7 @@
                         <a href="./about.html" class="footer-nav__link" title="À propos">À Propos</a>
                     </li>
                     <li>
-                        <a href="./exhibitions-and-books.html" class="footer-nav__link" title="Expos et livres">Expos et livres</a>
+                        <a href="#" class="footer-nav__link" title="Expos et livres">Expos et livres</a>
                     </li>
                     <li>
                         <a href="./contact.html" class="footer-nav__link" title="Contact">Contact</a>
