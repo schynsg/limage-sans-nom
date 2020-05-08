@@ -1,0 +1,194 @@
+/* RESET CSS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* END OF RESET CSS */
+@font-face {
+  font-family: "Novecento";
+  font-weight: bold;
+  src: url("../fonts/Novecentowide-Bold.ttf");
+}
+.skip-links {
+  position: absolute;
+}
+
+.skip-links a, .invisible {
+  position: absolute;
+  left: -9999px;
+  padding: 0.5em;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.skip-links a:focus {
+  position: static;
+}
+
+body {
+  font-size: 1em;
+  color: #434343;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  margin: 0 6.25vw;
+}
+
+header {
+  position: relative;
+}
+
+.menu-link {
+  margin-top: 3.7vh;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  font-size: 1.37em;
+}
+.menu-link p {
+  padding-top: 5px;
+}
+.menu-link a {
+  color: #434343;
+}
+
+.hidden-side {
+  position: absolute;
+  background-color: #333333;
+  height: 100vh;
+  width: 27.2vw;
+  right: -6.25vw;
+  animation: 0.5s;
+}
+.hidden-side a {
+  color: white;
+}
+.hidden-side svg {
+  fill: white;
+}
+.hidden-side.not-working {
+  right: -33.45vw;
+}
+
+.hidden-side__close {
+  margin-left: 6.5%;
+}
+.hidden-side__close svg {
+  margin-top: 2.78vh;
+  width: 3.5vw;
+  height: auto;
+}
+
+.menu, .social-networks, .lang {
+  text-align: right;
+}
+
+.menu {
+  font-size: 2.02em;
+  font-family: Novecento, sans-serif;
+  margin: 0 15.87%;
+}
+.menu li {
+  margin-top: 9.85vh;
+}
+.menu li a {
+  -webkit-text-stroke: 2px #BFBFBF;
+  color: transparent;
+}
+.menu li a:hover {
+  color: #F2E200;
+  -webkit-text-stroke: 0 transparent;
+}
+.menu li a:hover:after {
+  content: url(../img/arrow-right.svg);
+}
+
+.menu li a.active {
+  -webkit-text-stroke: 0 transparent;
+  color: #BFBFBF;
+}
+.menu li a.active:hover {
+  color: #F2E200;
+  -webkit-text-stroke: 0 transparent;
+}
+
+.social-networks__list {
+  margin: 5.74vh 0 0 45.5%;
+  width: 37.67%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-networks__item {
+  display: inline;
+}
+
+.lang {
+  margin: 11.5vh 15.87% 0 0;
+}
+
+.lang__item {
+  display: inline;
+  margin-left: 8px;
+}
+.lang__item a {
+  text-transform: uppercase;
+  color: #BFBFBF;
+  font-size: 1.6em;
+}
+.lang__item a:hover {
+  color: #F2E200;
+}

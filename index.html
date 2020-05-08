@@ -17,7 +17,7 @@
     <!--[if IE]>
     <link rel="shortcut icon" href="">
     <![endif]-->  <!-- Insérer le chemin vers l'icon .ico -->
-    <link rel="stylesheet" href=""> <!-- Insérer le chemin vers le css -->
+    <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 <body itemscope itemtype="https://schema.org/Organization">
 <header>
@@ -43,25 +43,27 @@
             <p class="menu-link__text">Menu</p>
         </a>
     </div>
-    <div class="hidden-side hidden">
-        <svg data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.65 54.37" width="65"
-             height="65">
-            <defs>
-                <style>.cls-2 {
-                    fill: none;
-                    stroke: #fff;
-                    stroke-width: 2px;
-                }</style>
-            </defs>
-            <line data-name="Ligne 15" class="cls-2" x1="0.62" y1="53.59" x2="68.03" y2="0.79"/>
-            <line data-name="Ligne 16" class="cls-2" x1="0.62" y1="0.79" x2="68.03" y2="53.59"/>
-        </svg>
+    <div class="hidden-side not-working">
+        <a href="#"  class="hidden-side__close">
+            <svg data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.65 54.37" width="65"
+                 height="65">
+                <defs>
+                    <style>.cls-2 {
+                        fill: none;
+                        stroke: #BFBFBF;
+                        stroke-width: 2px;
+                    }</style>
+                </defs>
+                <line data-name="Ligne 15" class="cls-2" x1="0.62" y1="53.59" x2="68.03" y2="0.79"/>
+                <line data-name="Ligne 16" class="cls-2" x1="0.62" y1="0.79" x2="68.03" y2="53.59"/>
+            </svg>
+        </a>
         <div class="menu" id="nav">
             <nav class="main-nav">
                 <h2 class="invisible">Navigation principale</h2>
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
-                        <a href="#" class="main-nav__link active " title="Accueil">Accueil</a>
+                        <a href="#" class="main-nav__link active" title="Accueil">Accueil</a>
                     </li>
                     <li>
                         <a href="./html/about.html" class="main-nav__link" title="À propos">À Propos</a>
@@ -84,7 +86,7 @@
                              viewBox="0 0 37.3 37.3" width="40" height="40">
                             <defs>
                                 <style>.cls-3 {
-                                    fill: #333;
+                                    fill: #BFBFBF;
                                 }</style>
                             </defs>
                             <path class="cls-3"
@@ -99,7 +101,7 @@
                              viewBox="0 0 37.55 37.89" width="40" height="40">
                             <defs>
                                 <style>.cls-4 {
-                                    fill: #333;
+                                    fill: #BFBFBF;
                                 }</style>
                             </defs>
                             <path class="cls-4"
@@ -115,9 +117,8 @@
                              width="40" height="40">
                             <defs>
                                 <style>.cls-5 {
-                                    fill: #333;
+                                    fill: #BFBFBF;
                                 }
-
                                 .cls-6 {
                                     opacity: 0;
                                 }</style>
@@ -420,4 +421,5 @@
     </div>
 </footer>
 </body>
+<script type="text/javascript" src="./src/js/menu-animation.js"></script>
 </html>
