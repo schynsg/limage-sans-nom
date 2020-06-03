@@ -3,7 +3,7 @@ const animationImage = document.getElementById('animated-image');
 let imageCount = 3;
 let imageNumber = 1;
 let imageSrc = './src/img/intro-img' + imageNumber + '.jpg';
-
+const imageBtn = document.getElementsByClassName('intro-images__item');
 
 function getImageSrc(){
     if (imageNumber < imageCount) {
@@ -15,7 +15,6 @@ function getImageSrc(){
 };
 
 function changeBtnColor() {
-    const imageBtn = document.getElementsByClassName('intro-images__item');
     for (let i = 0; i < imageCount; i++) {
         imageBtn[i].classList.remove("active");
     };
@@ -27,7 +26,5 @@ function changeImage(){
     changeBtnColor();
     animationImage.src = imageSrc;
 };
-
-
 
 setInterval(changeImage, 4000);

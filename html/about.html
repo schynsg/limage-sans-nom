@@ -17,10 +17,11 @@
     <!--[if IE]>
     <link rel="shortcut icon" href="">
     <![endif]-->  <!-- Insérer le chemin vers l'icon .ico -->
-    <link rel="stylesheet" href=""> <!-- Insérer le chemin vers le css -->
+    <link rel="stylesheet" href="../src/css/styles.css"> <!-- Insérer le chemin vers le css -->
 </head>
-<body itemscope itemtype="https://schema.org/Organization">
+<body itemscope itemtype="https://schema.org/Organization" class="about-body">
 <header>
+    <h1 class="invisible" itemprop="name">À propos</h1>
     <div class="skip-links">
         <a href="#nav">Aller au menu</a>
         <a href="#main">Aller au contenu</a>
@@ -42,19 +43,21 @@
             <p class="menu-link__text">Menu</p>
         </a>
     </div>
-    <div class="hidden-side hidden">
-        <svg data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.65 54.37" width="65"
-             height="65">
-            <defs>
-                <style>.cls-2 {
-                    fill: none;
-                    stroke: #fff;
-                    stroke-width: 2px;
-                }</style>
-            </defs>
-            <line data-name="Ligne 15" class="cls-2" x1="0.62" y1="53.59" x2="68.03" y2="0.79"/>
-            <line data-name="Ligne 16" class="cls-2" x1="0.62" y1="0.79" x2="68.03" y2="53.59"/>
-        </svg>
+    <div class="hidden-side not-working">
+        <a href="#" class="hidden-side__close">
+            <svg data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.65 54.37" width="65"
+                 height="65">
+                <defs>
+                    <style>.cls-2 {
+                        fill: none;
+                        stroke: #BFBFBF;
+                        stroke-width: 2px;
+                    }</style>
+                </defs>
+                <line data-name="Ligne 15" class="cls-2" x1="0.62" y1="53.59" x2="68.03" y2="0.79"/>
+                <line data-name="Ligne 16" class="cls-2" x1="0.62" y1="0.79" x2="68.03" y2="53.59"/>
+            </svg>
+        </a>
         <div class="menu" id="nav">
             <nav class="main-nav">
                 <h2 class="invisible">Navigation principale</h2>
@@ -143,13 +146,13 @@
 </header>
 <main id="main">
     <div class="gray-background"></div>
-    <h1 class="main-title mid-underline">À propos</h1>
+    <h2 class="main-title"><span class="mid-underline">À pr</span>opos</h2>
     <div class="about">
         <div class="about__image">
             <img src="../src/img/about-img.jpg" alt="Facade de L'Image Sans Nom" height="1460" width="960">
-        </div>
-        <div class="about__text">
-            <h2 class="mid-underline bold" itemprop="name">L'Image Sans Nom</h2>
+        </div><!--
+        --><div class="about__text">
+        <h3 class="bold" itemprop="name"><span class="mid-underline">L'Im</span>age Sans Nom</h3>
             <p class="about__paragraph">Un lieu pour les livres et la photographie.</p>
             <p class="about__paragraph">Un centre de documentation, longtemps adossé au centre d’art contemporain Les
                 Brasseurs sous le nom de « L’Annexe », a refait surface à Liège, après une assez longue hibernation.</p>
@@ -168,15 +171,15 @@
         </div>
     </div>
 </main>
-<footer>
+<footer class="about__footer">
     <div class="subsription">
-        <h2 class="subscription__title">Inscrivez-vous à notre newsletter</h2>
+        <h3 class="subscription__title">Inscrivez-vous à notre newsletter</h3>
         <p class="subscription__intro italic">Ceci nous permettra de vous tenir informé de notre actualité</p>
         <div class="subscription__form">
             <form action="#">
                 <label for="email" class="invisible">Votre adresse e-mail</label>
-                <input type="email" id="email" name="email" placeholder="name@domain.com">
-                <input type="submit" value="S'inscrire">
+                <input type="email" id="email" name="email" placeholder="name@domain.com"><!--
+                --><input type="submit" value="S'inscrire">
             </form>
         </div>
     </div>
@@ -304,4 +307,5 @@
     </div>
 </footer>
 </body>
+<script type="text/javascript" src="../src/js/menu-animation.js"></script>
 </html>
